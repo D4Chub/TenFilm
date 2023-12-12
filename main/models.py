@@ -6,6 +6,7 @@ class Movies(models.Model):
     rate = models.CharField('Rating', max_length=10)
     image = models.ImageField('Poster', upload_to='images/')
     url = models.URLField(null=True, blank=True)
+
     def __str__(self):
         return self.title
 
